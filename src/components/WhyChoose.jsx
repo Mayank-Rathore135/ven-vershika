@@ -1,5 +1,27 @@
 import { useEffect, useRef, useState } from "react";
-import { whyChooseItems } from "../data/siteData";
+
+const whyChooseItems = [
+  {
+    icon: "🌿",
+    title: "Custom Plans",
+    text: "Designs made according to space, sunlight, usage and property style.",
+  },
+  {
+    icon: "🪴",
+    title: "Premium Plants",
+    text: "Suitable indoor and outdoor plants for a clean natural look.",
+  },
+  {
+    icon: "💧",
+    title: "Smart Watering",
+    text: "Water planning that keeps the garden fresh with less effort.",
+  },
+  {
+    icon: "🪨",
+    title: "Natural Styling",
+    text: "Stones, pathways, pots and lights for a complete premium finish.",
+  },
+];
 
 function WhyChoose() {
   const landscapeImages = [
@@ -126,13 +148,14 @@ function WhyChoose() {
             </h2>
 
             <p className="mx-auto mt-4 max-w-2xl text-sm leading-7 text-green-50/75 sm:text-base sm:leading-8 lg:mx-0 lg:mt-5">
-              We are chosen for our thoughtful landscape planning, natural design style
-              and clean premium finishing. Whether it is a terrace garden, farmhouse
-              landscape, Zen garden, boutique water feature, fruit orchard or indoor
-              landscaping, we design every space with purpose, comfort and beauty. Our
-              work focuses on peaceful greenery, functional layouts, real stone details,
-              fresh plantation and designs that make homes, farmhouses and indoor spaces
-              feel naturally elegant.
+              We are chosen for our thoughtful landscape planning, natural
+              design style and clean premium finishing. Whether it is a terrace
+              garden, farmhouse landscape, Zen garden, boutique water feature,
+              fruit orchard or indoor landscaping, we design every space with
+              purpose, comfort and beauty. Our work focuses on peaceful
+              greenery, functional layouts, real stone details, fresh plantation
+              and designs that make homes, farmhouses and indoor spaces feel
+              naturally elegant.
             </p>
 
             <div className="mx-auto mt-7 w-full max-w-[430px] lg:hidden">
@@ -187,10 +210,11 @@ function WhyChoose() {
                     key={index}
                     type="button"
                     onClick={() => changeSlide(index)}
-                    className={`h-2 rounded-full transition-all duration-300 ${selectedIndex === index
+                    className={`h-2 rounded-full transition-all duration-300 ${
+                      selectedIndex === index
                         ? "w-8 bg-green-300"
                         : "w-2 bg-white/30"
-                      }`}
+                    }`}
                   ></button>
                 ))}
               </div>
@@ -249,10 +273,11 @@ function WhyChoose() {
                   key={index}
                   type="button"
                   onClick={() => changeSlide(index)}
-                  className={`h-2 rounded-full transition-all duration-300 ${selectedIndex === index
+                  className={`h-2 rounded-full transition-all duration-300 ${
+                    selectedIndex === index
                       ? "w-8 bg-green-300"
                       : "w-2 bg-white/30"
-                    }`}
+                  }`}
                 ></button>
               ))}
             </div>
@@ -273,18 +298,20 @@ function WhyChoose() {
                   type="button"
                   key={index}
                   onClick={() => changeSlide(index)}
-                  className={`group relative flex min-h-[190px] w-[82%] shrink-0 snap-center flex-col overflow-hidden rounded-[1.3rem] border p-5 text-left shadow-xl backdrop-blur-md transition duration-500 hover:-translate-y-2 sm:min-h-[230px] sm:w-auto sm:rounded-[1.6rem] sm:p-6 lg:min-h-[245px] ${active
+                  className={`group relative flex min-h-[190px] w-[82%] shrink-0 snap-center flex-col overflow-hidden rounded-[1.3rem] border p-5 text-left shadow-xl backdrop-blur-md transition duration-500 hover:-translate-y-2 sm:min-h-[230px] sm:w-auto sm:rounded-[1.6rem] sm:p-6 lg:min-h-[245px] ${
+                    active
                       ? "scale-[1.02] border-green-300/80 bg-green-300/25 shadow-green-300/10"
                       : "border-white/10 bg-white/[0.08] hover:border-green-300/40 hover:bg-white/[0.13]"
-                    }`}
+                  }`}
                 >
                   <div className="absolute -right-12 -top-12 h-32 w-32 rounded-full bg-green-300/10 blur-2xl transition duration-500 group-hover:bg-green-300/25"></div>
 
                   <div
-                    className={`relative mb-4 grid h-12 w-12 place-items-center rounded-[1rem] text-2xl shadow-lg transition duration-500 group-hover:scale-105 sm:mb-5 sm:h-14 sm:w-14 sm:rounded-[1.2rem] sm:text-3xl ${active
+                    className={`relative mb-4 grid h-12 w-12 place-items-center rounded-[1rem] text-2xl shadow-lg transition duration-500 group-hover:scale-105 sm:mb-5 sm:h-14 sm:w-14 sm:rounded-[1.2rem] sm:text-3xl ${
+                      active
                         ? "bg-white text-green-950"
                         : "bg-green-300 text-green-950"
-                      }`}
+                    }`}
                   >
                     {item.icon}
                   </div>
@@ -298,8 +325,9 @@ function WhyChoose() {
                   </p>
 
                   <div
-                    className={`relative mt-4 h-[2px] rounded-full bg-green-300 transition-all duration-500 sm:mt-5 ${active ? "w-24" : "w-12"
-                      }`}
+                    className={`relative mt-4 h-[2px] rounded-full bg-green-300 transition-all duration-500 sm:mt-5 ${
+                      active ? "w-24" : "w-12"
+                    }`}
                   ></div>
 
                   <p className="relative mt-3 text-[10px] font-bold uppercase tracking-[0.14em] text-green-300/80 sm:mt-4 sm:text-xs sm:tracking-[0.16em]">

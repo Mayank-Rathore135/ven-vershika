@@ -176,25 +176,3 @@ export const projects = [
 
 ];
 
-export const whyChooseItems = [
-  {
-    icon: "🌿",
-    title: "Custom Plans",
-    text: "Designs made according to space, sunlight, usage and property style.",
-  },
-  {
-    icon: "🪴",
-    title: "Premium Plants",
-    text: "Suitable indoor and outdoor plants for a clean natural look.",
-  },
-  {
-    icon: "💧",
-    title: "Smart Watering",
-    text: "Water planning that keeps the garden fresh with less effort.",
-  },
-  {
-    icon: "🪨",
-    title: "Natural Styling",
-    text: "Stones, pathways, pots and lights for a complete premium finish.",
-  },
-];
