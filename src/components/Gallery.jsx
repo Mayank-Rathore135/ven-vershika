@@ -6,9 +6,14 @@ import {
   Droplets,
   Flower2,
   Trees,
-  ArrowLeft,
-  ArrowRight,
 } from "lucide-react";
+
+import galleryImg1 from "../assets/IMG_9929.JPG";
+import galleryImg2 from "../assets/IMG_9963.JPG";
+import galleryImg3 from "../assets/IMG_9976.PNG";
+import galleryImg4 from "../assets/images.jpg";
+import galleryImg5 from "../assets/IMG_9926.jpg";
+import galleryImg6 from "../assets/IMG_9937.JPG";
 
 const Gallery = () => {
   const scrollRef = useRef(null);
@@ -18,7 +23,7 @@ const Gallery = () => {
       title: "Lawn & Tree Garden",
       category: "Open Garden Planning",
       icon: Leaf,
-      image: "src/assets/IMG_9929.JPG",
+      image: galleryImg1,
       description:
         "We design spacious open lawns with shade trees, fruit trees, palm plants, flowering shrubs along boundary walls and natural boulder accents — creating a lush, organized green space that feels alive and well planned.",
     },
@@ -26,7 +31,7 @@ const Gallery = () => {
       title: "Rock Waterfall",
       category: "Natural Water Feature",
       icon: Droplets,
-      image: "src/assets/IMG_9963.JPG",
+      image: galleryImg2,
       description:
         "We build layered rock waterfalls using natural boulders and river stones that cascade into a serene pond. Surrounded by aquatic plants and tropical greenery, the waterfall becomes the most premium and calming feature of the garden.",
     },
@@ -34,7 +39,7 @@ const Gallery = () => {
       title: "Garden Pathway",
       category: "Stone & Pebble Design",
       icon: Map,
-      image: "src/assets/IMG_9976.PNG",
+      image: galleryImg3,
       description:
         "We create elegant garden walkways with flat stone stepping slabs, white marble pebble bases and bamboo groves on the side — guiding you naturally through different zones of the garden with style and calm.",
     },
@@ -42,7 +47,7 @@ const Gallery = () => {
       title: "Terrace Garden",
       category: "Rooftop Green Space",
       icon: Sparkles,
-      image: "src/assets/images.jpg",
+      image: galleryImg4,
       description:
         "We design premium terrace and rooftop gardens with vertical plant walls, fire pit corners, outdoor seating zones, flowering plant borders and warm garden lighting — making your terrace beautiful day and night.",
     },
@@ -50,7 +55,7 @@ const Gallery = () => {
       title: "Entrance Landscaping",
       category: "Boundary & Front Design",
       icon: Trees,
-      image: "src/assets/IMG_9926.jpg",
+      image: galleryImg5,
       description:
         "We landscape villa and farmhouse entrances with shade trees along boundary walls, low ornamental plant borders, natural boulder accents and clean lawn strips — making a great first impression from the very front.",
     },
@@ -58,31 +63,13 @@ const Gallery = () => {
       title: "Thatched Gazebo",
       category: "Outdoor Sitting Area",
       icon: Flower2,
-      image: "src/assets/IMG_9937.JPG",
+      image: galleryImg6,
       description:
         "We design and install bamboo thatched-roof gazebos with raised lounge platforms, sunken seating zones and bamboo grove backdrops — creating a natural outdoor retreat for relaxation and entertainment.",
     },
   ];
 
   const infiniteProjects = [...projects, ...projects];
-
-  const scrollGallery = (direction) => {
-    if (scrollRef.current) {
-      const slider = scrollRef.current;
-
-      const scrollAmount =
-        window.innerWidth < 390
-          ? 270
-          : window.innerWidth < 640
-            ? 310
-            : 420;
-
-      slider.scrollBy({
-        left: direction === "left" ? -scrollAmount : scrollAmount,
-        behavior: "smooth",
-      });
-    }
-  };
 
   useEffect(() => {
     const slider = scrollRef.current;
@@ -131,23 +118,7 @@ const Gallery = () => {
         </p>
       </div>
 
-      <div className="relative group/slider">
-        <button
-          onClick={() => scrollGallery("left")}
-          aria-label="Scroll left"
-          className="absolute left-2 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-green-900 shadow-xl backdrop-blur-md transition-all duration-300 hover:scale-110 sm:h-12 sm:w-12 md:left-4 md:h-14 md:w-14 md:opacity-0 md:group-hover/slider:opacity-100"
-        >
-          <ArrowLeft className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7" />
-        </button>
-
-        <button
-          onClick={() => scrollGallery("right")}
-          aria-label="Scroll right"
-          className="absolute right-2 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-green-900 shadow-xl backdrop-blur-md transition-all duration-300 hover:scale-110 sm:h-12 sm:w-12 md:right-4 md:h-14 md:w-14 md:opacity-0 md:group-hover/slider:opacity-100"
-        >
-          <ArrowRight className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7" />
-        </button>
-
+      <div className="relative">
         <div
           ref={scrollRef}
           className="flex gap-4 overflow-x-auto px-0 pb-4 sm:gap-5 md:gap-6 md:pb-6 [&::-webkit-scrollbar]:hidden"

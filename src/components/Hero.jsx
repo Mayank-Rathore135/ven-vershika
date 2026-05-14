@@ -7,17 +7,20 @@ import {
   TreePine,
 } from "lucide-react";
 
+import heroBg from "../assets/10bae2e6-6c6c-467e-a18a-aec949b1e5ee.jpg";
+import heroImg from "../assets/IMG_9963.JPG";
+
 function Hero() {
   return (
     <section
       id="home"
       className="relative mx-4 mt-24 overflow-hidden rounded-[34px] bg-cover bg-center px-5 py-12 md:mx-8 md:px-10 md:py-16 lg:px-16"
       style={{
-        backgroundImage:
-          "url('src/assets/10bae2e6-6c6c-467e-a18a-aec949b1e5ee.jpg')",
+        backgroundImage: `url(${heroBg})`,
       }}
     >
       <div className="absolute inset-0 bg-gradient-to-r from-[#0d2718] via-[#062b16]/90 to-[#062b16]/35"></div>
+
       <div className="absolute inset-0 bg-[radial-gradient(circle_at_25%_25%,rgba(132,204,22,0.22),transparent_28%),radial-gradient(circle_at_85%_80%,rgba(34,197,94,0.18),transparent_30%)]"></div>
 
       <div className="absolute -left-20 top-16 h-72 w-72 rounded-full bg-lime-400/20 blur-3xl"></div>
@@ -68,7 +71,7 @@ function Hero() {
           <div className="rounded-[30px] border border-white/20 bg-white/10 p-3 shadow-[0_30px_100px_rgba(0,0,0,0.35)] backdrop-blur-xl md:p-4 lg:rounded-[34px]">
             <div className="relative overflow-hidden rounded-[24px] lg:rounded-[26px]">
               <img
-                src="src/assets/IMG_9963.JPG"
+                src={heroImg}
                 alt="Luxury landscape garden"
                 className="h-[300px] w-full object-cover object-center transition-all duration-700 hover:scale-105 sm:h-[360px] md:h-[470px] lg:h-[500px]"
               />

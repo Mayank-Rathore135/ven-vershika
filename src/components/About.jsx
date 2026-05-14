@@ -1,28 +1,33 @@
 import React from "react";
 import { Sprout, Flower2, ArrowRight } from "lucide-react";
 
+import aboutImg1 from "../assets/IMG_9926.jpg";
+import aboutImg2 from "../assets/IMG_9936.JPG";
+import aboutImg3 from "../assets/IMG_9976.PNG";
+import aboutImg4 from "../assets/IMG_9944.jpg";
+
 function About() {
   const images = [
     {
-      src: "src/assets/IMG_9926.jpg",
+      src: aboutImg1,
       alt: "Villa entrance landscaping with boundary wall and trees",
       tag: "Entrance Design",
       title: "Front & Boundary Landscaping",
     },
     {
-      src: "src/assets/IMG_9936.JPG",
+      src: aboutImg2,
       alt: "Open farmhouse garden with gravel zone and mixed plants",
       tag: "Farmhouse Garden",
       title: "Open Garden Design",
     },
     {
-      src: "src/assets/IMG_9976.PNG",
+      src: aboutImg3,
       alt: "Stone stepping pathway with white pebbles and bamboo",
       tag: "Pathway Design",
       title: "Stone & Pebble Walkways",
     },
     {
-      src: "src/assets/IMG_9944.jpg",
+      src: aboutImg4,
       alt: "Dense tropical plant border with palms and monstera",
       tag: "Plant Styling",
       title: "Tropical Plant Borders",
@@ -107,7 +112,7 @@ function About() {
               </p>
 
               <p className="hidden md:block">
-                Whether you want a serene rock waterfall as your garden's
+                Whether you want a serene rock waterfall as your garden&apos;s
                 centerpiece, a clean stone pathway through bamboo, a premium
                 wooden deck terrace, a lush open lawn with shade trees or a
                 complete villa landscape from entrance to backyard — GreenAura

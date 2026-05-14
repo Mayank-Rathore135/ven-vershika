@@ -8,24 +8,6 @@ function Portfolio() {
 
   const loopProjects = [...projects, ...projects];
 
-  const scrollPortfolio = (direction) => {
-    if (portfolioRef.current) {
-      const slider = portfolioRef.current;
-
-      const scrollAmount =
-        window.innerWidth < 390
-          ? 270
-          : window.innerWidth < 640
-          ? 310
-          : 420;
-
-      slider.scrollBy({
-        left: direction === "left" ? -scrollAmount : scrollAmount,
-        behavior: "smooth",
-      });
-    }
-  };
-
   useEffect(() => {
     const slider = portfolioRef.current;
     if (!slider) return;
@@ -71,47 +53,7 @@ function Portfolio() {
           </p>
         </div>
 
-        <div className="relative group/slider">
-          <button
-            onClick={() => scrollPortfolio("left")}
-            className="absolute left-2 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-green-900 shadow-xl backdrop-blur-md transition-all duration-300 hover:scale-110 sm:h-12 sm:w-12 md:left-4 md:h-14 md:w-14 md:opacity-0 md:group-hover/slider:opacity-100"
-            aria-label="Scroll portfolio left"
-          >
-            <svg
-              className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2.5}
-                d="M15 19l-7-7 7-7"
-              />
-            </svg>
-          </button>
-
-          <button
-            onClick={() => scrollPortfolio("right")}
-            className="absolute right-2 top-1/2 z-20 flex h-10 w-10 -translate-y-1/2 items-center justify-center rounded-full bg-white/90 text-green-900 shadow-xl backdrop-blur-md transition-all duration-300 hover:scale-110 sm:h-12 sm:w-12 md:right-4 md:h-14 md:w-14 md:opacity-0 md:group-hover/slider:opacity-100"
-            aria-label="Scroll portfolio right"
-          >
-            <svg
-              className="h-5 w-5 sm:h-6 sm:w-6 md:h-7 md:w-7"
-              fill="none"
-              stroke="currentColor"
-              viewBox="0 0 24 24"
-            >
-              <path
-                strokeLinecap="round"
-                strokeLinejoin="round"
-                strokeWidth={2.5}
-                d="M9 5l7 7-7 7"
-              />
-            </svg>
-          </button>
-
+        <div className="relative">
           <div
             ref={portfolioRef}
             className="flex gap-4 overflow-x-auto px-0 pb-10 min-[390px]:gap-5 md:gap-6 md:pb-12 [&::-webkit-scrollbar]:hidden"

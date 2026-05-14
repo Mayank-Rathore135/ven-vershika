@@ -86,93 +86,102 @@ export const services = [
   },
 ];
 
+import projectImg1 from "../assets/IMG_9940.JPG";
+import projectImg2 from "../assets/images.jpg";
+import projectImg3 from "../assets/fcf0e8a7-295b-4607-b7f0-6cb7d1e172e5.jpg";
+import projectImg4 from "../assets/IMG_9975.PNG";
+import projectImg5 from "../assets/IMG_9963.JPG";
+import projectImg6 from "../assets/IMG_9937.JPG";
+import projectImg7 from "../assets/10bae2e6-6c6c-467e-a18a-aec949b1e5ee.jpg";
+import projectImg8 from "../assets/88856569-789c-4f2c-b6be-115892db58e7.jpg";
+import projectImg9 from "../assets/House.jpeg";
+import projectImg10 from "../assets/IMG_9926.jpg";
+import projectImg11 from "../assets/IMG_9929.JPG";
+import projectImg12 from "../assets/IMG_9936.JPG";
+import projectImg13 from "../assets/IMG_9944.JPG";
+import projectImg14 from "../assets/IMG_9955.JPG";
+import projectImg15 from "../assets/WhatsApp Image 2026-05-13 at 21.55.32.jpeg";
+
 export const projects = [
   {
     name: "Modern Backyard Villa",
     category: "Landscape Design",
-    image:
-      "src/assets/IMG_9940.JPG",
+    image: projectImg1,
   },
   {
     name: "Luxury Terrace Garden",
     category: "Terrace Styling",
-    image:
-      "src/assets/images.jpg",
+    image: projectImg2,
   },
   {
     name: "Indoor Plant Lounge",
     category: "Interior Green Space",
-    image:
-      "src/assets/fcf0e8a7-295b-4607-b7f0-6cb7d1e172e5.jpg",
+    image: projectImg3,
   },
   {
     name: "Zen Garden Corner",
     category: "Peaceful Garden",
-    image:
-      "src/assets/IMG_9975.PNG",
+    image: projectImg4,
   },
   {
     name: "Water Feature Design",
     category: "Luxury Waterfall",
-    image:
-      "src/assets/IMG_9963.JPG",
+    image: projectImg5,
   },
   {
     name: "Green Outdoor Sitting",
     category: "Outdoor Decor",
-    image:
-      "src/assets/IMG_9937.JPG",
+    image: projectImg6,
   },
   {
     name: "Modern Courtyard Landscape",
     category: "Garden Landscaping",
-    image: "src/assets/10bae2e6-6c6c-467e-a18a-aec949b1e5ee.jpg",
+    image: projectImg7,
   },
   {
     name: "Rock Waterfall Garden",
     category: "Boutique Water Feature",
-    image: "src/assets/88856569-789c-4f2c-b6be-115892db58e7.jpg",
+    image: projectImg8,
   },
   {
     name: "Villa Courtyard Landscape",
     category: "Garden Landscaping",
-    image: "src/assets/House.jpeg",
+    image: projectImg9,
   },
   {
     name: "Villa Entrance Landscape",
     category: "Entrance Landscaping",
-    image: "src/assets/IMG_9926.jpg",
+    image: projectImg10,
   },
   {
     name: "Green Lawn Landscape",
     category: "Lawn Landscaping",
-    image: "src/assets/IMG_9929.JPG",
+    image: projectImg11,
   },
   {
     name: "White Gravel Garden",
     category: "Garden Landscaping",
-    image: "src/assets/IMG_9936.JPG",
+    image: projectImg12,
   },
   {
     name: "Modern Courtyard Landscape",
     category: "Courtyard Landscaping",
-    image: "src/assets/IMG_9940.JPG",
+    image: projectImg1,
   },
   {
     name: "Tropical Lawn Landscape",
     category: "Lawn Landscaping",
-    image: "src/assets/IMG_9944.JPG",
+    image: projectImg13,
   },
   {
     name: "Tree Corner Garden",
     category: "Garden Landscaping",
-    image: "src/assets/IMG_9955.JPG",
+    image: projectImg14,
   },
   {
     name: "Modern Villa Lawn",
     category: "Villa Landscaping",
-    image: "src/assets/WhatsApp Image 2026-05-13 at 21.55.32.jpeg",
+    image: projectImg15,
   },
-
 ];
 

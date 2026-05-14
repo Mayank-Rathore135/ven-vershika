@@ -1,5 +1,10 @@
 import { useEffect, useRef, useState } from "react";
 
+import chooseImg1 from "../assets/88856569-789c-4f2c-b6be-115892db58e7.jpg";
+import chooseImg2 from "../assets/IMG_9936.JPG";
+import chooseImg3 from "../assets/IMG_9963.JPG";
+import chooseImg4 from "../assets/10bae2e6-6c6c-467e-a18a-aec949b1e5ee.jpg";
+
 const whyChooseItems = [
   {
     icon: "🌿",
@@ -24,12 +29,7 @@ const whyChooseItems = [
 ];
 
 function WhyChoose() {
-  const landscapeImages = [
-    "src/assets/88856569-789c-4f2c-b6be-115892db58e7.jpg",
-    "src/assets/IMG_9936.JPG",
-    "src/assets/IMG_9963.JPG",
-    "src/assets/10bae2e6-6c6c-467e-a18a-aec949b1e5ee.jpg",
-  ];
+  const landscapeImages = [chooseImg1, chooseImg2, chooseImg3, chooseImg4];
 
   const sliderItems = whyChooseItems.map((item, index) => ({
     ...item,
