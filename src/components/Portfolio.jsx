@@ -12,7 +12,7 @@ import projectImg9 from "../assets/House.jpeg";
 import projectImg10 from "../assets/IMG_9926.jpg";
 import projectImg11 from "../assets/IMG_9929.JPG";
 import projectImg12 from "../assets/IMG_9936.JPG";
-import projectImg13 from "../assets/IMG_9944.JPG";
+import projectImg13 from "../assets/IMG_9944.jpg";
 import projectImg14 from "../assets/IMG_9955.JPG";
 import projectImg15 from "../assets/WhatsApp Image 2026-05-13 at 21.55.32.jpeg";
 
