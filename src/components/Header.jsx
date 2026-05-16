@@ -35,7 +35,7 @@ function Header() {
 
           <div className="flex flex-col">
             <h1 className="text-xl font-black tracking-tighter text-zinc-900 md:text-2xl">
-              <span className="text-green-600">VAN</span> VARSHIKA
+              <span className="text-green-600">VAN</span> VRIKSHA
             </h1>
 
             <div className="flex items-center gap-1">
