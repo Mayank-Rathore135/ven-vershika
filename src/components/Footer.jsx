@@ -47,7 +47,7 @@ function Footer() {
 
                   <div>
                     <h2 className="text-[1.45rem] font-black uppercase leading-tight tracking-tight text-white min-[390px]:text-2xl sm:text-3xl">
-                      Van<span className="text-emerald-300">Varshika</span>
+                      Van<span className="text-emerald-300">VRIKSHA</span>
                     </h2>
 
                     <div className="mx-auto mt-1 h-[1px] w-32 bg-gradient-to-r from-transparent via-emerald-400/50 to-transparent sm:w-full sm:from-emerald-400/40 sm:via-emerald-400/40 sm:to-transparent md:mx-0" />
